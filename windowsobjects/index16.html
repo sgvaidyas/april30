@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <input type="button" value="click" onclick="callme()">
+    </body>
+    <script>
+        function callme()
+        {
+            console.log("NAVAPP = " + navigator.appCodeName);
+            console.log("NAVAPP = " + navigator.appName);
+            console.log("NAVAPP = " + navigator.appVersion);
+            console.log("NAVAPP = " + navigator.userAgent);
+            console.log("NAVAPP = " + navigator.platform);
+            console.log("NAVAPP = " + navigator.language);
+           /* user = detect.parse(navigator.userAgent);
+            console.log("browser name = " + user.browser.family);*/
+            if(navigator.userAgent.indexOf("Chrome")!=-1)
+                console.log("CHROME");
+            else if(navigator.userAgent.indexOf("Firefox")!=-1)
+                console.log("Firefox");
+            else if(navigator.userAgent.indexOf("Opera")!=-1)
+                console.log("Opera");
+        }
+    </script>
+</html>

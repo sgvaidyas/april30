@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form name="myform">
+            <input type="text" value="" id="usrname" >
+            <input type="button" value="click" onclick="callme()">
+   
+        </form>
+    </body>
+    <script>
+        function callme()
+        {
+            var name  = document.getElementById("usrname");
+            alert("WELCOME = " + name.value);
+        }
+    </script>
+</html>

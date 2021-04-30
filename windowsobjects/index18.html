@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h2 class="myclass">My content </h2>
+        <input type="button" value="click" onclick="callme()">
+    </body>
+    <script>
+        function callme()
+        {
+            val = document.getElementsByClassName("myclass");
+            val[0].innerHTML = "hey this changed me !!!";
+
+            val[0].style["color"] = "red";
+            val[0].style["background-color"] = "black";
+            
+        }
+    </script>
+</html>

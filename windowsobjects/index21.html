@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <form name="myform">
+            <input type="number" value="" id="num1" >
+            <input type="number" value="" id="num2" >
+            <input type="button" value="ADD" onclick="add()">   
+        </form>
+        <p id = "res"></p>
+    </body>
+    <script>
+        function add()
+        {
+            var n1  = document.getElementById("num1");
+            var n2  = document.getElementById("num2");
+            sum = parseInt(n1.value)+parseInt(n2.value);
+            document.getElementById("res").innerHTML = "SUM   = " + sum;
+        }
+    </script>
+</html>

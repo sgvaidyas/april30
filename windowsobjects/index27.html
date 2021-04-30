@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <form>
+            <select id="fruits">
+                <option>Watermelon</option>
+                <option>Grapes</option>
+                <option>Kiwi</option>
+                <option>Mango</option>
+                <option>Orange</option>
+            </select>
+            <input type="button" value="click" onclick="callme()">
+        </form>
+        <p id="res"></p>
+    </body>
+    <script>
+        function callme()
+        {
+            var index= document.getElementById("fruits").selectedIndex;
+            result = document.getElementById("fruits").options;
+            document.getElementById("res").innerHTML = "You selected = " +  result[index].text;
+        }
+        
+    </script>
+</html>

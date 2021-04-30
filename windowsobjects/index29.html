@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div>
+            <h2  id="clock"></h2>
+        </div>
+    </body>
+    <script>
+        function callme()
+        {
+           var date = new Date();
+ 
+           hour = date.getHours();
+           min = date.getMinutes();
+           sec = date.getSeconds();
+            
+           if(hour<12)
+           {
+            mytime = hour + " : " + min + " : " + sec+ " AM ";
+            }
+           else if (hour == 12)
+            mytime = hour + " : " + min + " : " + sec+ "PM";
+           else
+           {
+            mytime = (hour-12) + " : " + min + " : " + sec+ " PM ";
+           }
+           
+           document.getElementById("clock").innerHTML = mytime;
+ 
+           var x = setTimeout(function(){callme()},1000);
+        }
+        callme();
+    </script>
+</html>

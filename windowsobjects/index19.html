@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h2 class="myclass">My content </h2>
+        <h2>hey this is me </h2>
+        <h2>hey this is me </h2>
+        <h1>hey this is me </h1>
+        <h3>hey this is me </h3>
+        <input type="button" value="click" onclick="callme()">
+    </body>
+    <script>
+        function callme()
+        {
+            var cnt = document.getElementsByTagName("h2");
+            console.log(cnt.length);
+
+            for (var i in cnt)
+                console.log(cnt[i])
+        }
+    </script>
+</html>

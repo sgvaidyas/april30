@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <form>
+            <input type="checkbox" id="BCA" value="BCA">BCA<br>
+            <input type="checkbox" id="MCA" value="MCA">MCA<br>
+            <input type="checkbox" id="BSC" value="BSC">BSC<br>
+            <input type="button" value="click" onclick="callme()">
+        </form>
+        <p id="res"></p>
+    </body>
+    <script>
+        function callme()
+        {
+            var c1 = document.getElementById("BCA");
+            var c2 = document.getElementById("MCA");
+            var c3 = document.getElementById("BSC");
+            
+            result = "";
+            if(c1.checked)
+                result = result+" BCA ";
+            if(c2.checked)
+                result = result+" MCA ";
+            if(c3.checked)
+                result = result+" BSC ";
+            
+            document.getElementById("res").innerHTML = result;
+        }
+        
+    </script>
+</html>

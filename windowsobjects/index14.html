@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <input type="button" value="click" onclick="callme()">
+    </body>
+    <script>
+        function callme()
+        {
+            var x = confirm("Do u want to delete ? ");
+
+            if (x==true)
+            {
+                setTimeout(function(){
+                    alert("OK deleting ")},5000);
+            }
+                
+            else
+                alert("Cancelling");
+        }
+    </script>
+</html>

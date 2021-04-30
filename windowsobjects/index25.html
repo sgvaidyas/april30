@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <form>
+            <input type="radio" name="gender" value="MALE">MALE<br>
+            <input type="radio" name="gender" value="FEMALE">FEMALE<br>
+            <input type="radio" name="gender" value="OTHERS">OTHERS<br>
+            <input type="button" value="click" onclick="callme()">
+
+        </form>
+        
+    </body>
+    <script>
+        function callme()
+        {
+            var val = document.getElementsByName("gender");
+            for (var a in val)
+            {
+                if(val[a].checked)
+                {
+                    alert("you selected " + val[a].value)
+                }
+            }
+        }
+        
+    </script>
+</html>
