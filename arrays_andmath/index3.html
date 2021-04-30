@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <button type="button" onclick = "myfunction()">MyClick</button>
+    </body>
+
+    <script>
+        function myfunction()
+        {
+
+            var names = ["Ajay","Ameer","Karthik","Ayush"];
+            console.log(names.sort());
+
+            var a = [11,2,3,44,5,6];
+            console.log("a = "  + a);
+            a.reverse();
+            console.log("a = "  + a);
+            x= a.sort(function compare(x,y){
+                return x-y;
+            });
+            console.log(x);
+            n = x.length;
+            console.log("Min  = "+ x[0]);
+            console.log("Max  = "+ x[n-1] );
+
+            //x.reverse();
+            x= a.sort(function compare(x,y){
+                return y-x;
+            });
+            console.log(x);
+            
+
+            /*
+            var a=new Array()
+            a[0] = 22;
+            a[1] = 55;
+            a[2] = "apple";
+            console.log(a);
+            */
+        }
+
+    </script>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <button type="button" onclick = "myfunction()">MyClick</button>
+    </body>
+
+    <script>
+        function myfunction(){
+            var n = [10,11,12,13,14,15];
+            var n2 = n.reduce(printme);
+            console.log(n2);
+
+            function printme(total,value,index,array){
+               // return total+array[index];
+               return (index%2==0)?total+value : total+0;
+            }          
+        }
+
+
+    </script>
+</html>

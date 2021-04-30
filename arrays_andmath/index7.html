@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <button type="button" onclick = "myfunction()">MyClick</button>
+    </body>
+
+    <script>
+        function myfunction(){
+            var n = [66,77,45,55,39,88,76];
+            var n2 = n.filter(printme);
+            console.log(n2);
+
+            function printme(value){
+                return value>65
+            }          
+        }
+
+
+    </script>
+</html>

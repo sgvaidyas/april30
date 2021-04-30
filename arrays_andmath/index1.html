@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <button type="button" onclick = "myfunction()">MyClick</button>
+    </body>
+
+    <script>
+        function myfunction()
+        {
+            var a=[11,22,33,"apple","mango"];
+
+            for(var x in a)
+            {
+                console.log(a[x]);
+            }
+            a.push(55);
+            a.push(66);
+            console.log("The updated array = ");
+            console.log(a)
+            console.log("Popped ele = "  + a.pop());
+            console.log("Popped ele = "  + a.pop());
+            console.log("The updated array = ");
+            console.log(a);
+        }
+
+    </script>
+</html>

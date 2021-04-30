@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <button type="button" onclick = "myfunction()">MyClick</button>
+    </body>
+
+    <script>
+        function myfunction()
+        {
+            var a = [11,2,33,4,5];
+            var max = -Infinity;
+            //var min = Infinity;
+            console.log(a);
+            for (var x in a)
+            {
+                //if(a[x]<min) min = a[x]
+                if(a[x]>max){
+                    max=a[x];
+                }
+            }
+            console.log("Max = " + max);           
+        }
+
+    </script>
+</html>

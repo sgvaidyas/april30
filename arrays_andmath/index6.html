@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <button type="button" onclick = "myfunction()">MyClick</button>
+    </body>
+
+    <script>
+        function myfunction(){
+            var n = [22,33,44,55,66,7];
+            var n2 = n.map(printme);
+            console.log(n2);
+
+            function printme(value){
+                if(value%2==0)
+                    return true;
+                else
+                    return false;
+            }          
+        }
+
+
+    </script>
+</html>
